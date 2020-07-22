@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ページ-3</title>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="src/css/reboot.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/URI.js"></script>
+    <script src="libs/escape.js"></script>
+    <script src="dist/js/script.js"></script>
+    <script src="dist/js/search.js"></script>
+  </head>
+  <body>
+    <noscript><p>このページは JavaScript を使用しています。<br>お使いのブラウザーは JavaScript が無効になっているか、JavaScript に対応していません。<br>適切にこのページ表示する場合は JavaScriptを有効にするか、JavaScript に対応しているブラウザーでアクセスしてください。</p></noscript>
+		<header class="l-header">
+			<div class="l-header_pc">
+				<div class="l-header_pc_inner wrap">
+					<nav class="breadcrumb pc">
+						<ul>
+							<li class="home"><a href="index.html"><img class="svg-icon icon-home-header" src="images/icon/home-solid.svg" alt="home-solid">HOME</a></li>
+							<li>ページ-3</li>
+						</ul>
+					</nav><!-- /breadcrumb -->
+					<div class="search-form">
+						<form action="search-result.html" method="get" id="searchForm">
+						  <input class="search-input" placeholder="検索" type="text" name="search-key">
+						  <input class="search-button btn btn-theme" type="submit" value="検索">
+						</form>
+					</div><!-- /search-form -->
+				</div>
+			</div><!-- /l-header_pc -->
+			<div class="l-header_sp">
+				<nav class="breadcrumb sp">
+					<ul>
+						<li class="home"><a href="index.html"><img class="svg-icon icon-home-header" src="images/icon/home-solid.svg" alt="home-solid">HOME</a></li>
+						<li>ページ-3</li>
+					</ul>
+				</nav><!-- /breadcrumb -->
+				<div class="btn btn-search"><img class="svg-icon icon-search" src="images/icon/search-regular.svg" alt="search-regular"></div><!-- /btn-search -->
+				<div class="search-form">
+					<form action="search-result.html" method="get">
+					  <input class="search-input" placeholder="検索" type="text" name="search-key">
+					  <input class="search-button btn btn-theme" type="submit" value="検索">
+					</form>
+					<div class="btn btn-close"><img class="svg-icon icon-close" src="images/icon/times-circle-regular.svg" alt="times-circle-regular"></div>
+				</div><!-- /search-form -->
+			</div><!-- /l-header_sp -->
+		</header><!-- /l-header -->
+		
+		<main class="l-main">
+			<div id="article">
+				<div class="l-main_header">
+					<h1 class="wrap">ページタイトル</h1>
+				</div><!-- /l-main_header -->
+				<div class="l-main_body">
+					<div class="wrap">
+						<p>#article内の要素が検索対象。</p>
+						<p>ページ2：バナナ、ぶどう、スイカ</p>
+					</div>
+				</div><!-- /l-main_body -->
+			</div><!-- /article -->
+		</main><!-- /l-main -->
+  </body>
+</html>
