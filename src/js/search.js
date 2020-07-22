@@ -26,6 +26,7 @@ $.when.apply($, resultLists)
     $.each(resultLists, (i) => {
       const data = resultLists[i].responseText;
       if ($(data).find("#article").text().indexOf(key) !== -1) {
+        resultCount += 1;
         const title = $(data).filter('title').text();
         $('<li><a href="' + urlLists[i] + '">' + title + '</a></li>').appendTo($('#searchResult'));
       }
