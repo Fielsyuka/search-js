@@ -15,6 +15,7 @@ $.each(urlLists, function (i) {
   }));
 });
 $.when.apply($, resultLists).done(function () {
+  $('<h2> 検索キーワード：「' + escapeSearchKey + '」</h2>').appendTo($('#searchResultKey'));
   $.each(resultLists, function (i) {
     var data = resultLists[i].responseText;
 

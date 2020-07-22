@@ -23,6 +23,8 @@ $.each(urlLists, (i) => {
 });
 $.when.apply($, resultLists)
   .done(() => {
+    $('<h2> 検索キーワード：「' + escapeSearchKey + '」</h2>').appendTo($('#searchResultKey'));
+
     $.each(resultLists, (i) => {
       const data = resultLists[i].responseText;
       if ($(data).find("#article").text().indexOf(key) !== -1) {
